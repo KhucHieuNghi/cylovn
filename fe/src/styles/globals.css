@@ -1,0 +1,200 @@
+@import '~antd/dist/antd.css';
+
+@font-face {
+  font-family: "bae";
+  src: url("/fonts/BMDANIEL-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/fonts/Roboto-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Roboto-Regular", sans-serif;
+  color: #7f8893;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-size: 10px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.txt-dark{
+  color: #141619;
+}
+
+.txt--branch-name{
+  color: #3ac5c9;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.txt-white{
+  color: #ffff;
+}
+
+.section--gray{
+  background-color: #f5f7fa;
+}
+
+.section--primary{
+  background-color: #3ac5c9;
+}
+
+.section--dark{
+  background-color: #21272f;
+}
+
+.container{
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.price{
+  font-weight: bold;
+  font-size: 1.025rem;
+}
+
+.text-align__center{
+  text-align: center;
+}
+
+.text-error{
+  color: #ff4d4f;
+}
+
+.modal-order-detail{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Antd orverride */
+
+.row-warning{
+  background-color: #ffdf7e;
+}
+
+.row-warning .ant-table-column-sort{
+  background-color: #ffeeba;
+}
+
+.row-error{
+  background-color: #ffa39e;
+}
+.row-error .ant-table-column-sort{
+  background-color: #fff1f0;
+}
+
+.ant-btn-primary{
+  border-color: #3ac5c9;
+  background: #3ac5c9;
+}
+
+.ant-btn-primary:hover{
+  border-color: #3ac5c9;
+  background: #3ac5c9;
+}
+
+.ant-btn-link{
+  color: #3ac5c9;
+}
+
+.ant-pagination-item-active{
+  border-color: #3ac5c9;
+}
+
+.ant-pagination-item-active a{
+  color: #3ac5c9;
+}
+
+.ant-table-column-title{
+  font-weight: bold;
+}
+
+.ant-table-thead .ant-table-cell{
+  font-weight: bold !important;
+}
+
+.ant-table-tbody .col-updated-time{
+  font-weight: bold !important;
+}
+
+.ant-select-selector{
+  border-radius: 8px !important;
+  border-color: #3ac5c9 !important;
+}
+
+.anticon-caret-up.active, .anticon-caret-down.active{
+  color: #3ac5c9 !important;
+}
+
+.ant-tag{
+  border-radius: 4px !important;
+}
+
+.ant-input{
+  border: 1px solid #3ac5c9 !important;
+  border-radius: 8px; 
+}
+
+svg{
+  color: #3ac5c9;
+}
+
+span.ant-tag.ant-tag-has-color{
+  color: black;
+}

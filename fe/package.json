@@ -1,0 +1,81 @@
+{
+  "name": "cylo",
+  "private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --no-cache --fix && tsc --pretty --noemit",
+    "export": "next build && next export",
+    "analyze": "ANALYZE=true next build",
+    "prepare": "husky install",
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "antd": "^4.23.0",
+    "axios": "0.26.0",
+    "date-fns": "^2.29.2",
+    "immer": "^9.0.14",
+    "lint": "^0.7.0",
+    "next": "^12.1.6",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-query": "3.34.16",
+    "sass": "1.49.7",
+    "styled-components": "^5.3.5",
+    "webpack": "5.5.0",
+    "zustand": "^4.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^16.2.1",
+    "@next/bundle-analyzer": "^12.1.0",
+    "@next/eslint-plugin-next": "12.0.10",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/node": "17.0.18",
+    "@types/react": "17.0.39",
+    "@types/react-test-renderer": "^18.0.0",
+    "@types/styled-components": "^5.1.25",
+    "@types/stylis": "^4.0.2",
+    "@typescript-eslint/eslint-plugin": "5.12.0",
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.7.1",
+    "enforce-branch-name": "^1.0.1",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.0.10",
+    "eslint-config-prettier": "8.3.0",
+    "husky": "^7.0.0",
+    "jest": "^29.0.3",
+    "jest-environment-jsdom": "^29.0.3",
+    "lint-staged": "^12.3.7",
+    "prettier": "2.5.1",
+    "react-test-renderer": "^18.2.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.5.3",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "typescript": "4.6.3",
+    "webpack-merge": "^5.8.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npx branch-name-lint [sample-configuration.json]"
+    }
+  },
+  "lint-staged": {
+    "./src/*.{js,jsx,ts,tsx}": [
+      "yarn build"
+    ]
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  }
+}
