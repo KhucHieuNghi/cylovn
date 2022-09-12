@@ -8,6 +8,7 @@ api: localhost:8000
 ```
 
 preview: https://www.loom.com/share/1c1b823e9fd74113ab12905f35555b35
+https://www.canva.com/design/DAFFffHvMRo/T2RUqPPOvLjjOXWFdu-AsA/view
 
 # Debt Technical
 1. Full fill Unitest
